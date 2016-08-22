@@ -1,5 +1,6 @@
 {
   "name": "infinite-scrolling",
+  "version": "0.1",
   "description": "Infinite Scrolling by Using Angular 2, Express.js, Mongoose.js, Node.js, MongoDB",
   "author": "Akhil Pentamsetty",
   "repository": {
@@ -7,7 +8,10 @@
     "url": "https://github.com/akhilpab/Angular2Demo"
   },
   "scripts": {
-    "start": "node src/server.js"
+    "postinstall": "typings install",
+    "prestart": "webpack",
+    "start": "concurrently \"webpack --watch --colors\" \"nodemon src/server.js\"",
+    "typings": "typings"
   },
   "license": "MIT",
   "dependencies": {
