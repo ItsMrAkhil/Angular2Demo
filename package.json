@@ -1,6 +1,6 @@
 {
   "name": "infinite-scrolling",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "Infinite Scrolling by Using Angular 2, Express.js, Mongoose.js, Node.js, MongoDB",
   "author": "Akhil Pentamsetty",
   "repository": {

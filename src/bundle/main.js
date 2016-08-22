@@ -64122,8 +64122,8 @@
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(11);
-	var angular2_infinite_scroll_1 = __webpack_require__(727);
-	var post_component_1 = __webpack_require__(466);
+	var angular2_infinite_scroll_1 = __webpack_require__(466);
+	var post_component_1 = __webpack_require__(485);
 	var post_service_1 = __webpack_require__(462);
 	var PostsCompoent = (function () {
 	    function PostsCompoent(_postService) {
@@ -64164,309 +64164,15 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	    return c > 3 && r && Object.defineProperty(target, key, r), r;
-	};
-	var __metadata = (this && this.__metadata) || function (k, v) {
-	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-	};
-	var core_1 = __webpack_require__(11);
-	var PostComponent = (function () {
-	    function PostComponent() {
-	    }
-	    __decorate([
-	        core_1.Input(), 
-	        __metadata('design:type', Object)
-	    ], PostComponent.prototype, "data", void 0);
-	    PostComponent = __decorate([
-	        core_1.Component({
-	            selector: 'post',
-	            template: "\n        <div class=\"media\">\n            <a class=\"media-left\" href=\"#\">\n                <img class=\"media-object\" src=\"{{data.image}}\" alt=\"Generic placeholder image\">\n            </a>\n            <div class=\"media-body\">\n                <h4 class=\"media-heading\">{{data.title}}</h4>\n                {{data.description}}\n            </div>\n        </div>\n        <hr class=\"m-y-2\">  \n    "
-	        }), 
-	        __metadata('design:paramtypes', [])
-	    ], PostComponent);
-	    return PostComponent;
-	}());
-	exports.PostComponent = PostComponent;
-
-
-/***/ },
-/* 467 */,
-/* 468 */,
-/* 469 */,
-/* 470 */,
-/* 471 */,
-/* 472 */,
-/* 473 */,
-/* 474 */,
-/* 475 */,
-/* 476 */,
-/* 477 */,
-/* 478 */,
-/* 479 */,
-/* 480 */,
-/* 481 */,
-/* 482 */,
-/* 483 */,
-/* 484 */,
-/* 485 */,
-/* 486 */,
-/* 487 */,
-/* 488 */,
-/* 489 */,
-/* 490 */,
-/* 491 */,
-/* 492 */,
-/* 493 */,
-/* 494 */,
-/* 495 */,
-/* 496 */,
-/* 497 */,
-/* 498 */,
-/* 499 */,
-/* 500 */,
-/* 501 */,
-/* 502 */,
-/* 503 */,
-/* 504 */,
-/* 505 */,
-/* 506 */,
-/* 507 */,
-/* 508 */,
-/* 509 */,
-/* 510 */,
-/* 511 */,
-/* 512 */,
-/* 513 */,
-/* 514 */,
-/* 515 */,
-/* 516 */,
-/* 517 */,
-/* 518 */,
-/* 519 */,
-/* 520 */,
-/* 521 */,
-/* 522 */,
-/* 523 */,
-/* 524 */,
-/* 525 */,
-/* 526 */,
-/* 527 */,
-/* 528 */,
-/* 529 */,
-/* 530 */,
-/* 531 */,
-/* 532 */,
-/* 533 */,
-/* 534 */,
-/* 535 */,
-/* 536 */,
-/* 537 */,
-/* 538 */,
-/* 539 */,
-/* 540 */,
-/* 541 */,
-/* 542 */,
-/* 543 */,
-/* 544 */,
-/* 545 */,
-/* 546 */,
-/* 547 */,
-/* 548 */,
-/* 549 */,
-/* 550 */,
-/* 551 */,
-/* 552 */,
-/* 553 */,
-/* 554 */,
-/* 555 */,
-/* 556 */,
-/* 557 */,
-/* 558 */,
-/* 559 */,
-/* 560 */,
-/* 561 */,
-/* 562 */,
-/* 563 */,
-/* 564 */,
-/* 565 */,
-/* 566 */,
-/* 567 */,
-/* 568 */,
-/* 569 */,
-/* 570 */,
-/* 571 */,
-/* 572 */,
-/* 573 */,
-/* 574 */,
-/* 575 */,
-/* 576 */,
-/* 577 */,
-/* 578 */,
-/* 579 */,
-/* 580 */,
-/* 581 */,
-/* 582 */,
-/* 583 */,
-/* 584 */,
-/* 585 */,
-/* 586 */,
-/* 587 */,
-/* 588 */,
-/* 589 */,
-/* 590 */,
-/* 591 */,
-/* 592 */,
-/* 593 */,
-/* 594 */,
-/* 595 */,
-/* 596 */,
-/* 597 */,
-/* 598 */,
-/* 599 */,
-/* 600 */,
-/* 601 */,
-/* 602 */,
-/* 603 */,
-/* 604 */,
-/* 605 */,
-/* 606 */,
-/* 607 */,
-/* 608 */,
-/* 609 */,
-/* 610 */,
-/* 611 */,
-/* 612 */,
-/* 613 */,
-/* 614 */,
-/* 615 */,
-/* 616 */,
-/* 617 */,
-/* 618 */,
-/* 619 */,
-/* 620 */,
-/* 621 */,
-/* 622 */,
-/* 623 */,
-/* 624 */,
-/* 625 */,
-/* 626 */,
-/* 627 */,
-/* 628 */,
-/* 629 */,
-/* 630 */,
-/* 631 */,
-/* 632 */,
-/* 633 */,
-/* 634 */,
-/* 635 */,
-/* 636 */,
-/* 637 */,
-/* 638 */,
-/* 639 */,
-/* 640 */,
-/* 641 */,
-/* 642 */,
-/* 643 */,
-/* 644 */,
-/* 645 */,
-/* 646 */,
-/* 647 */,
-/* 648 */,
-/* 649 */,
-/* 650 */,
-/* 651 */,
-/* 652 */,
-/* 653 */,
-/* 654 */,
-/* 655 */,
-/* 656 */,
-/* 657 */,
-/* 658 */,
-/* 659 */,
-/* 660 */,
-/* 661 */,
-/* 662 */,
-/* 663 */,
-/* 664 */,
-/* 665 */,
-/* 666 */,
-/* 667 */,
-/* 668 */,
-/* 669 */,
-/* 670 */,
-/* 671 */,
-/* 672 */,
-/* 673 */,
-/* 674 */,
-/* 675 */,
-/* 676 */,
-/* 677 */,
-/* 678 */,
-/* 679 */,
-/* 680 */,
-/* 681 */,
-/* 682 */,
-/* 683 */,
-/* 684 */,
-/* 685 */,
-/* 686 */,
-/* 687 */,
-/* 688 */,
-/* 689 */,
-/* 690 */,
-/* 691 */,
-/* 692 */,
-/* 693 */,
-/* 694 */,
-/* 695 */,
-/* 696 */,
-/* 697 */,
-/* 698 */,
-/* 699 */,
-/* 700 */,
-/* 701 */,
-/* 702 */,
-/* 703 */,
-/* 704 */,
-/* 705 */,
-/* 706 */,
-/* 707 */,
-/* 708 */,
-/* 709 */,
-/* 710 */,
-/* 711 */,
-/* 712 */,
-/* 713 */,
-/* 714 */,
-/* 715 */,
-/* 716 */,
-/* 717 */,
-/* 718 */,
-/* 719 */,
-/* 720 */,
-/* 721 */,
-/* 722 */,
-/* 723 */,
-/* 724 */,
-/* 725 */,
-/* 726 */,
-/* 727 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
 	function __export(m) {
 	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 	}
-	var infinite_scroll_1 = __webpack_require__(728);
-	var scroller_1 = __webpack_require__(729);
-	var axis_resolver_1 = __webpack_require__(730);
-	__export(__webpack_require__(728));
-	__export(__webpack_require__(729));
-	__export(__webpack_require__(730));
+	var infinite_scroll_1 = __webpack_require__(467);
+	var scroller_1 = __webpack_require__(468);
+	var axis_resolver_1 = __webpack_require__(469);
+	__export(__webpack_require__(467));
+	__export(__webpack_require__(468));
+	__export(__webpack_require__(469));
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.default = {
 	    directives: [infinite_scroll_1.InfiniteScroll, scroller_1.Scroller, axis_resolver_1.AxisResolver]
@@ -64474,7 +64180,7 @@
 
 
 /***/ },
-/* 728 */
+/* 467 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64488,7 +64194,7 @@
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(11);
-	var scroller_1 = __webpack_require__(729);
+	var scroller_1 = __webpack_require__(468);
 	var InfiniteScroll = (function () {
 	    function InfiniteScroll(element) {
 	        this.element = element;
@@ -64565,15 +64271,15 @@
 
 
 /***/ },
-/* 729 */
+/* 468 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(70);
-	var axis_resolver_1 = __webpack_require__(730);
-	__webpack_require__(731);
-	__webpack_require__(734);
-	__webpack_require__(744);
+	var axis_resolver_1 = __webpack_require__(469);
+	__webpack_require__(470);
+	__webpack_require__(473);
+	__webpack_require__(483);
 	var Scroller = (function () {
 	    function Scroller(windowElement, $interval, $elementRef, infiniteScrollDownCallback, infiniteScrollUpCallback, infiniteScrollDownDistance, infiniteScrollUpDistance, infiniteScrollParent, infiniteScrollThrottle, isImmediate, horizontal, alwaysCallback) {
 	        if (horizontal === void 0) { horizontal = false; }
@@ -64744,7 +64450,7 @@
 
 
 /***/ },
-/* 730 */
+/* 469 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -64766,26 +64472,26 @@
 
 
 /***/ },
-/* 731 */
+/* 470 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(70);
-	var fromEvent_1 = __webpack_require__(732);
+	var fromEvent_1 = __webpack_require__(471);
 	Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 
 
 /***/ },
-/* 732 */
+/* 471 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var FromEventObservable_1 = __webpack_require__(733);
+	var FromEventObservable_1 = __webpack_require__(472);
 	exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
 
 
 /***/ },
-/* 733 */
+/* 472 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64884,26 +64590,26 @@
 
 
 /***/ },
-/* 734 */
+/* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(70);
-	var timer_1 = __webpack_require__(735);
+	var timer_1 = __webpack_require__(474);
 	Observable_1.Observable.timer = timer_1.timer;
 
 
 /***/ },
-/* 735 */
+/* 474 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var TimerObservable_1 = __webpack_require__(736);
+	var TimerObservable_1 = __webpack_require__(475);
 	exports.timer = TimerObservable_1.TimerObservable.create;
 
 
 /***/ },
-/* 736 */
+/* 475 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -64912,11 +64618,11 @@
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var isNumeric_1 = __webpack_require__(737);
+	var isNumeric_1 = __webpack_require__(476);
 	var Observable_1 = __webpack_require__(70);
-	var async_1 = __webpack_require__(738);
+	var async_1 = __webpack_require__(477);
 	var isScheduler_1 = __webpack_require__(358);
-	var isDate_1 = __webpack_require__(743);
+	var isDate_1 = __webpack_require__(482);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @extends {Ignored}
@@ -65015,7 +64721,7 @@
 
 
 /***/ },
-/* 737 */
+/* 476 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65032,16 +64738,16 @@
 
 
 /***/ },
-/* 738 */
+/* 477 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var AsyncScheduler_1 = __webpack_require__(739);
+	var AsyncScheduler_1 = __webpack_require__(478);
 	exports.async = new AsyncScheduler_1.AsyncScheduler();
 
 
 /***/ },
-/* 739 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65050,8 +64756,8 @@
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var FutureAction_1 = __webpack_require__(740);
-	var QueueScheduler_1 = __webpack_require__(741);
+	var FutureAction_1 = __webpack_require__(479);
+	var QueueScheduler_1 = __webpack_require__(480);
 	var AsyncScheduler = (function (_super) {
 	    __extends(AsyncScheduler, _super);
 	    function AsyncScheduler() {
@@ -65066,7 +64772,7 @@
 
 
 /***/ },
-/* 740 */
+/* 479 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65206,12 +64912,12 @@
 
 
 /***/ },
-/* 741 */
+/* 480 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var QueueAction_1 = __webpack_require__(742);
-	var FutureAction_1 = __webpack_require__(740);
+	var QueueAction_1 = __webpack_require__(481);
+	var FutureAction_1 = __webpack_require__(479);
 	var QueueScheduler = (function () {
 	    function QueueScheduler() {
 	        this.active = false;
@@ -65255,7 +64961,7 @@
 
 
 /***/ },
-/* 742 */
+/* 481 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65264,7 +64970,7 @@
 	    function __() { this.constructor = d; }
 	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 	};
-	var FutureAction_1 = __webpack_require__(740);
+	var FutureAction_1 = __webpack_require__(479);
 	/**
 	 * We need this JSDoc comment for affecting ESDoc.
 	 * @ignore
@@ -65293,7 +64999,7 @@
 
 
 /***/ },
-/* 743 */
+/* 482 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -65304,17 +65010,17 @@
 
 
 /***/ },
-/* 744 */
+/* 483 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var Observable_1 = __webpack_require__(70);
-	var throttle_1 = __webpack_require__(745);
+	var throttle_1 = __webpack_require__(484);
 	Observable_1.Observable.prototype.throttle = throttle_1.throttle;
 
 
 /***/ },
-/* 745 */
+/* 484 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65392,6 +65098,40 @@
 	    };
 	    return ThrottleSubscriber;
 	}(OuterSubscriber_1.OuterSubscriber));
+
+
+/***/ },
+/* 485 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(11);
+	var PostComponent = (function () {
+	    function PostComponent() {
+	    }
+	    __decorate([
+	        core_1.Input(), 
+	        __metadata('design:type', Object)
+	    ], PostComponent.prototype, "data", void 0);
+	    PostComponent = __decorate([
+	        core_1.Component({
+	            selector: 'post',
+	            template: "\n        <div class=\"media\">\n            <a class=\"media-left\" href=\"#\">\n                <img class=\"media-object\" src=\"{{data.image}}\" alt=\"Generic placeholder image\">\n            </a>\n            <div class=\"media-body\">\n                <h4 class=\"media-heading\">{{data.title}}</h4>\n                {{data.description}}\n            </div>\n        </div>\n        <hr class=\"m-y-2\">  \n    "
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], PostComponent);
+	    return PostComponent;
+	}());
+	exports.PostComponent = PostComponent;
 
 
 /***/ }
