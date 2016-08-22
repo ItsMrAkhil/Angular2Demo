@@ -1,0 +1,45 @@
+<div class="card">
+    <h5 class="card-header">
+        Add Post
+    </h5>
+    <div class="card-block">
+        <form action="" [formGroup] = "_addPostForm" (ngSubmit) = "submitAdd()">
+            <div class="form-group row">
+                <label for="title" class="col-xs-2 col-form-label">Post Title</label>
+                <div class="col-xs-10">
+                    <input class="form-control" formControlName="title"  type="text" placeholder="Examples: 'Google OS Fuchsia', 'Nokia is Coming Back'" id="title" >
+                </div>
+            </div>
+            <div *ngIf="_addPostForm.controls.title.errors && _addPostForm.controls.title.touched" class="alert alert-danger fade in col-xs-10 offset-xs-2" role="alert">
+                <strong>Error!</strong> The title length should be 6 or more.
+            </div>
+            <div class="form-group row">
+                <label for="image" class="col-xs-2 col-form-label">Header Image URL</label>
+                <div class="col-xs-10">
+                    <input class="form-control" formControlName="image" type="text" value="http://lorempixel.com/400/400?1" placeholder="http://lorempixel.com/400/400" id="image" >
+                </div>
+            </div>
+            <div *ngIf="_addPostForm.controls.image.errors && _addPostForm.controls.image.touched" class="alert alert-danger fade in col-xs-10 offset-xs-2" role="alert">
+                <strong>Error!</strong> Valid image URL should end with image extensions like (.jpeg, jpg, .png). And length at least 10.
+            </div>
+            <div class="form-group row">
+                <label for="description" class="col-xs-2 col-form-label">Description</label>
+                <div class="col-xs-10">
+                    <textarea class="form-control" formControlName="description" id="description" rows="3" placeholder="Some beautiful description about your post." ></textarea>
+                </div>
+            </div>
+            <div *ngIf="_addPostForm.controls.description.errors && _addPostForm.controls.description.touched" class="alert alert-danger fade in col-xs-10 offset-xs-2" role="alert">
+                <strong>Error!</strong> Description length should be at least 20.
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-2"></div>
+                <div class="col-xs-10">
+                    <button [disabled]="!_addPostForm.valid" class="btn btn-primary pull-xs-right" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div [hidden]="!_infoMsg.message" class="message alert alert-{{_infoMsg.type}} alert-dismissible" role="alert">
+        <strong>Message:</strong> {{_infoMsg.message}}
+    </div>
+</div>
