@@ -16,7 +16,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('dev'));
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/test');
+mongoose.connect('mongodb://localhost:27017/test', function(err){
+  if(err){
+    return mongoose.connect("mongodb://angular:angular@ds013456.mlab.com:13456/koachr");
+  }
+});
 var db = mongoose.connection;
 mongoose.Promise = global.Promise;
 
